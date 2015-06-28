@@ -1,50 +1,138 @@
 .b-content {
-    width: 100%;
+    margin: 0 auto;
+    width: 830px;
     background: white;
 }
 
 .b-content-heading {
-    
+    color: black;
+    margin-top: 35px;
+    margin-left: 20px;
 }
 
+.b-content-heading span {
+    display: block;
+    cursor: default;
+}
+
+.b-content-heading-text {
+    display: block; 
+    font-size: 29px; 
+    color: #878787; 
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: default;
+}
+
+////////////////////////////////////////
 .b-content-classmates {
     width: 830px;
     height: 200px;
+    border-radius: 7px;
+    margin-top: 35px;
+    display: block;
     background: url('common/assets/yellow-noise-tex.jpg') repeat;
 }
 
 .b-content-users {
     width: 772px;
     height: 98px;
+    margin-left: 30px;
+    margin-top: 10px;
     background: url('pages/main/content/assets/users.png') no-repeat;
 }
 
+.b-content-classmates-heading {
+    display: inline-block;
+    font-size: 23px; 
+    color: #52524a; 
+    margin-left: 30px; 
+    margin-top: 15px;
+    cursor: default;
+}
+
+////////////////////////////////////////
 .b-content-meetings {
-    
+    color: black;
+    margin-top: 20px;
+}
+
+.b-content-meetings span {
+    display: block;
+    cursor: default; 
 }
 
 .b-content-meetings-card {
     width: 170px;
     height: 116px;
+    margin-left: 30px;
     display: inline-block;
+    text-align: center;
     background: url('pages/main/content/assets/small-card.png') no-repeat;
+}
+
+.b-content-meetings-card.hidden {
+    opacity: 0.5;
 }
 
 .b-content-meetings-card span {
     display: block;
 }
 
+.b-content-meetings-card-date {
+    margin-top: 15px;
+    display: block;    
+}
+
+////////////////////////////////////////
 .b-content-place {
-    
+    color: black;
+    margin-top: 20px;
+}
+
+.b-content-place span {
+    display: block;
+    cursor: default;
 }
 
 .b-content-place-card {
     width: 170px;
     height: 170px;
+    margin-left: 30px;
     display: inline-block;
+    text-align: center;
     background: url('pages/main/content/assets/large-card.png') no-repeat;
+}
+
+.b-content-place-card.hidden {
+    opacity: 0.5;
+}
+
+.b-content-place-card-headeing {
+    margin-top: 17px;
+    display: block;
+    color: #4476bd;
+    text-decoration: underline;
 }
 
 .b-content-place-card span {
     display: block;
+}
+
+.b-content-place-card-cost {
+    margin-top: 15px;
+}
+
+////////////////////////////////////////
+.b-more-users-button {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+}
+
+.b-more-users-button:hover {
+    opacity: 0.8;
 }

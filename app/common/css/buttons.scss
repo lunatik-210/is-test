@@ -10,7 +10,7 @@
 .b-button span {
     position: relative;
     top: 12px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .b-button.grey-button {
@@ -24,6 +24,8 @@
 }
 
 .b-button.blue-button {
+    display: inline-block;
+    margin-top: 10px;
     width: 112px;
     height: 41px;
     background: url('common/assets/blue-button.png') no-repeat;    
