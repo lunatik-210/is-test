@@ -10,6 +10,7 @@
         <a class="b-more-users-button">Показать еще 192 чевлоека</a>
     </div>
 
+    <div class="b-tick"></div>
     <span class="b-content-heading-text">Выберите дату встречи</span>
     <div class="b-content-meetings">
         <div ng-repeat="date in dates.data" ng-class="{'hidden': !date.is_active}" ng-click="dates.activate(date)" class="b-content-meetings-card">
@@ -21,6 +22,7 @@
         </div>
     </div>
 
+    <div class="b-tick"></div>
     <span class="b-content-heading-text">Выберите ресторан</span>
     <div class="b-content-place">
         <div ng-repeat="restaurant in restaurants.data" ng-class="{'hidden': !restaurant.is_active}" ng-click="restaurants.activate(restaurant)" class="b-content-place-card">

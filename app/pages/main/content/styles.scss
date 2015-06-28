@@ -16,7 +16,8 @@
 }
 
 .b-content-heading-text {
-    display: block; 
+    display: inline-block;
+    position: relative;
     font-size: 29px; 
     color: #878787; 
     margin-top: 30px;
@@ -45,9 +46,9 @@
 .b-content-classmates-heading {
     display: inline-block;
     font-size: 23px; 
-    color: #52524a; 
-    margin-left: 30px; 
+    color: #52524a;
     margin-top: 15px;
+    margin-left: 30px;
     cursor: default;
 }
 
@@ -153,4 +154,13 @@
 
 .b-more-users-button:hover {
     opacity: 0.8;
+}
+
+.b-tick {
+    display: inline-block;
+    position: relative;
+    margin-left: -30px;
+    width: 27px;
+    height: 27px;
+    background: url('pages/main/content/assets/tick.png') no-repeat;    
 }
