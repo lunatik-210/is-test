@@ -6,7 +6,8 @@ var mainModule = angular.module
 (
     "app.pages.main", 
     [
-        require('angularUIRouter')
+        require('angularUIRouter'),
+        require('../../models/module')
     ]
 );
 

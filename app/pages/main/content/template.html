@@ -12,24 +12,10 @@
 
     <span class="b-content-heading-text">Выберите дату встречи</span>
     <div class="b-content-meetings">
-        <div class="b-content-meetings-card hidden">
-            <span class="b-content-meetings-card-date">12 октября</span>
-            <span style="margin-top: 3px;">Суббота, 19:00</span>
-            <div class="b-button blue-button">
-                <span>Изменить</span>
-            </div>
-        </div>
-        <div class="b-content-meetings-card">
-            <span class="b-content-meetings-card-date">23 октября</span>
-            <span style="margin-top: 3px;">Суббота, 19:00</span>
-            <div class="b-button blue-button">
-                <span>Изменить</span>
-            </div>
-        </div>
-        <div class="b-content-meetings-card hidden">
-            <span class="b-content-meetings-card-date">30 октября</span>
-            <span style="margin-top: 3px;">Суббота, 19:00</span>
-            <div class="b-button blue-button">
+        <div ng-repeat="dates in dates.data" ng-class="{'hidden': !dates.is_active}" class="b-content-meetings-card">
+            <span class="b-content-meetings-card-date">{{dates.date}}</span>
+            <span style="margin-top: 3px;">{{dates.time}}</span>
+            <div ng-if="dates.is_active" class="b-button blue-button">
                 <span>Изменить</span>
             </div>
         </div>
@@ -37,36 +23,14 @@
 
     <span class="b-content-heading-text">Выберите ресторан</span>
     <div class="b-content-place">
-        <div class="b-content-place-card hidden">
-            <span class="b-content-place-card-headeing">Эларджи</span>
-            <span style="margin-top: 3px;">Грузинская кухня</span>
+        <div ng-repeat="restaurant in restaurants.data" ng-class="{'hidden': !restaurant.is_active}" class="b-content-place-card">
+            <span class="b-content-place-card-headeing">{{restaurant.name}}</span>
+            <span style="margin-top: 3px;">{{restaurant.cuisine}}</span>
             <div class="b-content-place-card-cost">
-                <span>2500 руб.</span>
+                <span>{{restaurant.cost_per_person}} руб.</span>
                 <span>на человека</span>
             </div>
-            <div class="b-button blue-button">
-                <span>Изменить</span>
-            </div>
-        </div>
-        <div class="b-content-place-card hidden">
-            <span class="b-content-place-card-headeing">Оливковый пляж</span>
-            <span style="margin-top: 3px;">Европейская кухня</span>
-            <div class="b-content-place-card-cost">
-                <span>1500 руб.</span>
-                <span>на человека</span>
-            </div>
-            <div class="b-button blue-button">
-                <span>Изменить</span>
-            </div>
-        </div>
-        <div class="b-content-place-card">
-            <span class="b-content-place-card-headeing">Эларджи</span>
-            <span style="margin-top: 3px;">Европейская кухня</span>
-            <div class="b-content-place-card-cost">
-                <span>3200 руб.</span>
-                <span>на человека</span>
-            </div>
-            <div class="b-button blue-button">
+            <div ng-if="restaurant.is_active" class="b-button blue-button">
                 <span>Изменить</span>
             </div>
         </div>
