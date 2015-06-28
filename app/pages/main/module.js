@@ -2,10 +2,13 @@
 
 var angular = require("angular");
 
+require('angularAnimate');
+
 var mainModule = angular.module
 (
     "app.pages.main", 
     [
+        "ngAnimate",
         require('angularUIRouter'),
         require('../../models/module')
     ]

@@ -26,13 +26,18 @@
 .b-bottom-arrow {
     height: 54px;
     width: 432px;
-    background: url('pages/main/bottom/assets/arrow-button.png') no-repeat;
-    display: inline-block;
-    position: relative;
+
     left: 200px;
-    top: 65px;
+    top: 50px;
+
+    position: relative;
+    display: inline-block;
+    
     cursor: pointer;
-    z-index: 2;
+
+    background: url('pages/main/bottom/assets/arrow-button.png') no-repeat;
+
+    text-align: center;
 }
 
 .b-bottom-arrow:hover {
@@ -40,9 +45,9 @@
 }
 
 .b-bottom-arrow span {
+    position: relative;
     font-size: 20px;
-    margin-top: 13px;
-    margin-left: 10px;
+    top: 13px;
     cursor: pointer;
     display: block;
 }
