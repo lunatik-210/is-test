@@ -12,10 +12,10 @@
 
     <span class="b-content-heading-text">Выберите дату встречи</span>
     <div class="b-content-meetings">
-        <div ng-repeat="dates in dates.data" ng-class="{'hidden': !dates.is_active}" class="b-content-meetings-card">
-            <span class="b-content-meetings-card-date">{{dates.date}}</span>
-            <span style="margin-top: 3px;">{{dates.time}}</span>
-            <div ng-if="dates.is_active" class="b-button blue-button">
+        <div ng-repeat="date in dates.data" ng-class="{'hidden': !date.is_active}" ng-click="dates.activate(date)" class="b-content-meetings-card">
+            <span class="b-content-meetings-card-date">{{date.date}}</span>
+            <span style="margin-top: 3px;">{{date.time}}</span>
+            <div ng-class="{'hidden': !date.is_active}" class="b-button blue-button ">
                 <span>Изменить</span>
             </div>
         </div>
@@ -23,14 +23,14 @@
 
     <span class="b-content-heading-text">Выберите ресторан</span>
     <div class="b-content-place">
-        <div ng-repeat="restaurant in restaurants.data" ng-class="{'hidden': !restaurant.is_active}" class="b-content-place-card">
+        <div ng-repeat="restaurant in restaurants.data" ng-class="{'hidden': !restaurant.is_active}" ng-click="restaurants.activate(restaurant)" class="b-content-place-card">
             <span class="b-content-place-card-headeing">{{restaurant.name}}</span>
             <span style="margin-top: 3px;">{{restaurant.cuisine}}</span>
             <div class="b-content-place-card-cost">
                 <span>{{restaurant.cost_per_person}} руб.</span>
                 <span>на человека</span>
             </div>
-            <div ng-if="restaurant.is_active" class="b-button blue-button">
+            <div ng-class="{'hidden': !restaurant.is_active}" class="b-button blue-button">
                 <span>Изменить</span>
             </div>
         </div>

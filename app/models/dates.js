@@ -14,16 +14,19 @@ modelsModule.factory
             dates.data = 
             [
                 {
+                    id: 1,
                     date: "12 октября",
                     time: "Суббота, 19:00",
                     is_active: false
                 },
                 {
+                    id: 2,
                     date: "23 октября",
                     time: "Суббота, 19:00",
                     is_active: false
                 },
                 {
+                    id: 3,
                     date: "30 октября",
                     time: "Суббота, 19:00",
                     is_active: false
