@@ -149,7 +149,7 @@
     text-decoration: underline;
     margin-left: 30px;
     margin-top: 10px;
-    display: block;
+    display: inline-block;
 }
 
 .b-more-users-button:hover {
@@ -166,7 +166,7 @@
 }
 
 .b-tick.ng-enter {
-    transition:0.2s linear all;
+    transition:0.5s linear all;
     opacity:0;
 }
 
