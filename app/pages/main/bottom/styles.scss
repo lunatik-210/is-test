@@ -1,0 +1,77 @@
+.b-bottom {
+    width: 100%;
+    height: 250px;
+}
+
+.b-bottom-white-line {
+    width: 100%;
+    height: 100px;
+    position: realtive;
+    z-index: 1;
+    background: white;
+};
+
+.b-bottom-yellow-line {
+    width: 100%;
+    height: 150px;
+    background: url('common/assets/yellow-noise-tex.jpg') repeat;
+    position: realtive;
+    text-align: center;
+    z-index: 1;
+}
+
+.b-bottom-box {
+    position: absolute;
+    z-index: 2;
+    margin-left: -415px;
+    left: 50%;
+    width: 830px;
+}
+
+.b-bottom-arrow {
+    height: 54px;
+    width: 432px;
+    background: url('pages/main/bottom/assets/arrow-button.png') no-repeat;
+    display: block;
+    position: relative;
+    left: 200px;
+    top: 48px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.b-bottom-arrow:hover {
+    opacity: 0.8;
+}
+
+.b-bottom-arrow span {
+    font-size: 20px;
+    position: relative;
+    top: 13px;
+    cursor: pointer;
+}
+
+$b-bottom-circle-radius: 100px;
+
+.b-bottom-circle {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    float: right;
+    
+    -moz-border-radius: $b-bottom-circle-radius;
+    -webkit-border-radius: $b-bottom-circle-radius;
+    border-radius: $b-bottom-circle-radius;
+
+    background: url('pages/main/bottom/assets/circle-gradient.png') repeat-y;
+
+    text-align: center;
+}
+
+.b-bottom-circle span {
+    font-size: 16px;
+    position: relative;
+    top: 35px;
+    cursor: default;  
+    display: block;  
+}

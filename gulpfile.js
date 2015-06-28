@@ -28,7 +28,7 @@ var paths =
 {
     initjs: ['./app/init.js'],
     sass: ['app/app.scss'],
-    static: ['app/**/*.html', 'app/**/img/**', 'app/**/images/**', 'app/**/fonts/**']
+    static: ['app/**/*.html', 'app/**/img/**', 'app/**/images/**', 'app/**/fonts/**', 'app/**/assets/**']
 };
 
 function build_scripts()
@@ -73,7 +73,7 @@ function watch_static()
     {
         console.log("copy_static");
 
-        gulp.src([bases.build+'**/*.html', bases.build+'**/img', bases.build+'**/images', bases.build+'**/images'], {read: false})
+        gulp.src([bases.build+'**/*.html', bases.build+'**/img', bases.build+'**/images', bases.build+'**/images', bases.build+'**/assets'], {read: false})
             .pipe(clean());
 
         copy_static();

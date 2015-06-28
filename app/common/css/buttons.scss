@@ -1,0 +1,30 @@
+.b-button {
+    cursor: pointer; 
+    text-align: center;  
+}
+
+.b-button:hover {
+    opacity: 0.8;
+}
+
+.b-button span {
+    position: relative;
+    top: 12px;
+    cursor: pointer;
+}
+
+.b-button.grey-button {
+    width: 106px;
+    height: 42px;
+    background: url('common/assets/grey-button.png') no-repeat;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.b-button.blue-button {
+    width: 112px;
+    height: 41px;
+    background: url('common/assets/blue-button.png') no-repeat;    
+}

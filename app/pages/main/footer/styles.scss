@@ -1,0 +1,66 @@
+$b-footer-background-gradient: to top, #202332, #272827;
+
+.b-footer {
+    width: 100%;
+    height: 196px;
+    background: url('pages/main/footer/assets/background-gradient.png') repeat-x;
+    display: flex;
+}
+
+.b-footer-block {
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+}
+
+.b-footer-block span {
+    font-size: 16px;
+}
+
+.b-footer-block.underline span {
+    text-decoration: underline;
+    cursor: pointer; 
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    top: 30px;
+}
+
+.b-footer-block.underline span:hover {
+    opacity: 0.8;
+}
+
+.b-footer-block-separator {
+    display: inline-block;
+    height: 100%;
+    width: 30px;
+}
+
+.b-footer-block-logo-area {
+    position: relative;
+    top: 30px;
+    cursor: default; 
+}
+
+.b-footer-logo {
+    height: 29px;
+    width: 176px;
+    background: url('pages/main/footer/assets/logo.png') no-repeat;
+    margin-top: 4px;
+}
+
+.b-footer-block-logo-ingenius-area {
+}
+
+.b-footer-block-logo-ingenius-area span {
+    position: relative;
+    width: 130px;
+    display: inline-block;
+}
+
+.b-footer-logo-ingenius {
+    height: 92px;
+    width: 79px;
+    background: url('pages/main/footer/assets/logo-ingenius.png') no-repeat;
+    display: inline-block;
+}

@@ -4,13 +4,18 @@
 }
 
 body {
-    background: #e2e5ea;
+    font-family: UbuntuRegular;
+    background: url('common/assets/background.jpg') repeat;
 }
 
 .main {
     margin:0 auto;
-    width:100%;
-    min-width:960px;
-    max-width:1366px;
-    background: #eef1f6;
+    width:1176px;
+}
+
+.b-clear-float {
+    clear:both; 
+    float:none; 
+    height:0; 
+    font-size:0;
 }
