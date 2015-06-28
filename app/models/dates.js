@@ -40,7 +40,12 @@ modelsModule.factory
 
             dates.activate = function(element)
             {
-                require('../common/js/activate')(dates.data, element);
+                require('../common/js/models').activate(dates.data, element);
+            };
+
+            dates.is_active = function(array)
+            {
+                return require('../common/js/models').is_active(dates.data);
             };
 
             return dates;

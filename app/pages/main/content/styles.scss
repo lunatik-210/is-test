@@ -164,3 +164,12 @@
     height: 27px;
     background: url('pages/main/content/assets/tick.png') no-repeat;    
 }
+
+.b-tick.ng-enter {
+    transition:0.2s linear all;
+    opacity:0;
+}
+
+.b-tick.ng-enter.ng-enter-active {
+    opacity:1.0;
+}

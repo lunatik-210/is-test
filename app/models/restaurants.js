@@ -43,7 +43,12 @@ modelsModule.factory
 
             restaurants.activate = function(element)
             {
-                require('../common/js/activate')(restaurants.data, element);
+                require('../common/js/models').activate(restaurants.data, element);
+            };
+
+            restaurants.is_active = function(array)
+            {
+                return require('../common/js/models').is_active(restaurants.data);
             };
 
             return restaurants;
