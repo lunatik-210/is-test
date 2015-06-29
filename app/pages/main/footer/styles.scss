@@ -50,17 +50,22 @@ $b-footer-background-gradient: to top, #202332, #272827;
 }
 
 .b-footer-block-logo-ingenius-area {
+    display: block;
+    margin-top: 20px;
 }
 
 .b-footer-block-logo-ingenius-area span {
     position: relative;
     width: 130px;
     display: inline-block;
+    color: #7e7e85;
+    font-size: 13px;
+    bottom: 30px;
 }
 
 .b-footer-logo-ingenius {
-    height: 92px;
-    width: 79px;
+    height: 85px;
+    width: 111px;
     background: url('pages/main/footer/assets/logo-ingenius.png') no-repeat;
     display: inline-block;
 }
