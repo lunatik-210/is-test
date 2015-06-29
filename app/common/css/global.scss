@@ -21,3 +21,29 @@ body {
     height:0; 
     font-size:0;
 }
+
+$animated-duration: .3s;
+$animated-delay: 0s;
+
+.animated {
+  -webkit-animation-duration: $animated-duration;
+  -o-animation-duration: $animated-duration;
+  -moz-animation-duration: $animated-duration;
+  animation-duration: $animated-duration;
+  
+  -webkit-animation-delay: $animated-delay;
+  -o-animation-delay: $animated-delay;
+  -moz-animation-delay: $animated-delay;
+  animation-delay: $animated-delay;
+}
+
+.b-popup-shadow {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+}

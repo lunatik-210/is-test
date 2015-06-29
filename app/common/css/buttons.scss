@@ -34,3 +34,16 @@
     height: 41px;
     background: url('common/assets/blue-button.png') no-repeat;    
 }
+
+.b-dialog-buttons {
+    margin-top: 20px;
+}
+
+.b-dialog-buttons span {
+    font-size: 16px !important;
+    color: white !important;
+}
+
+.b-button.grey-button.change-button {
+    margin-right: 0px;
+}

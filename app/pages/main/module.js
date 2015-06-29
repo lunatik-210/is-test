@@ -3,18 +3,21 @@
 var angular = require("angular");
 
 require('angularAnimate');
+require('angularModal');
 
 var mainModule = angular.module
 (
     "app.pages.main", 
     [
         "ngAnimate",
+        "angularModalService",
         require('angularUIRouter'),
         require('../../models/module')
     ]
 );
 
 require('./controller');
+require('./cost-dialog/controller');
 
 mainModule.config
 (

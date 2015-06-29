@@ -1,0 +1,19 @@
+.b-dialog {
+    background: white;
+    position: fixed;
+    z-index: 11;   
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: solid 5px #969696;
+}
+
+.b-dialog-content {
+    margin: 20px;
+}
+
+.b-dialog-content span {
+    display: block;
+    color: #7e7e85;
+    font-size: 25px;
+}
