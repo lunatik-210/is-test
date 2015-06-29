@@ -12,7 +12,10 @@ var mainCtrl = function($scope, restaurants, dates, ModalService)
     {
         ModalService.showModal({
             templateUrl: "pages/main/cost-dialog/template.html",
-            controller: "main.cost-dialog.ctrl"
+            controller: "main.cost-dialog.ctrl",
+            inputs: {
+                cost: restaurant.cost_per_person
+            }
         }).then(function(modal) {
             modal.close.then(function(result) 
             {

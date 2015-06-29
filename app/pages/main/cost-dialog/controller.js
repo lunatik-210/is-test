@@ -3,8 +3,10 @@
 var angular = require("angular"); 
 var mainModule = angular.module("app.pages.main");
 
-var costDialogCtrl = function($scope, $element, close)
+var costDialogCtrl = function($scope, $element, close, cost)
 {
+    $scope.cost = cost;
+
     $scope.close = function(result)
     {
         $element.addClass("animated fadeOut");
@@ -12,4 +14,4 @@ var costDialogCtrl = function($scope, $element, close)
     };
 };
 
-mainModule.controller("main.cost-dialog.ctrl", ["$scope", "$element", "close", costDialogCtrl]);
+mainModule.controller("main.cost-dialog.ctrl", ["$scope", "$element", "close", "cost", costDialogCtrl]);
