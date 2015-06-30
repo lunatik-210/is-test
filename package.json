@@ -21,7 +21,10 @@
     "angularAnimate": "./bower_components/angular-animate/angular-animate.min.js",
     "angularModal": "./bower_components/angular-modal-service/dst/angular-modal-service.min.js",
     "moment": "./bower_components/momentjs/min/moment-with-locales.min.js",
-    "momentRu": "./bower_components/momentjs/locale/ru.js"
+    "momentRu": "./bower_components/momentjs/locale/ru.js",
+    "jqueryUI": "./bower_components/jquery-ui/jquery-ui.min.js",
+    "jqueryUIDatePickerRu": "./bower_components/jquery-ui/ui/i18n/datepicker-ru.js",
+    "angularUIDate": "./bower_components/angular-ui-date/src/date.js"
   },
   "browserify-shim": {
     "angular": {
@@ -57,6 +60,23 @@
     "momentRu": {
       "depends": [
         "moment"
+      ]
+    },
+    "jqueryUI": {
+      "depends": [
+        "jQuery"
+      ],
+      "exports": "jQueryUI"
+    },
+    "angularUIDate": {
+      "depends": [
+        "jqueryUI",
+        "angular"
+      ]
+    },
+    "jqueryUIDatePickerRu": {
+      "depends": [
+        "jqueryUI"
       ]
     }
   },

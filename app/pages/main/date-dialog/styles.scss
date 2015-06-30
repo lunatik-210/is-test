@@ -1,6 +1,26 @@
 .b-dialog.date-dialog {
     width: 400px;
-    height: 220px;
+    height: 180px;
     margin-left: -200px;
-    margin-top: -110px;
+    margin-top: -90px;
+}
+
+.b-dialog-date-input {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    color: #7e7e85;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    margin-top: 20px;
+}
+
+.b-dialog-date-input:focus {
+    outline: none;
+    border-bottom: solid 3px #969696;
 }

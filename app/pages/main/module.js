@@ -4,6 +4,8 @@ var angular = require("angular");
 
 require('angularAnimate');
 require('angularModal');
+require('angularUIDate');
+require('jqueryUIDatePickerRu');
 
 var mainModule = angular.module
 (
@@ -11,6 +13,7 @@ var mainModule = angular.module
     [
         "ngAnimate",
         "angularModalService",
+        "ui.date",
         require('angularUIRouter'),
         require('../../models/module'),
         require('../../common/js/filters/module')

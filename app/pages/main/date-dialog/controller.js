@@ -1,11 +1,22 @@
 'use strict';
 
-var angular = require("angular"); 
+var angular = require("angular");
+var jQuery = require("jQuery");
 var mainModule = angular.module("app.pages.main");
 
 var dateDialogCtrl = function($scope, $element, close, date)
 {
     $scope.date = date;
+
+    $scope.init = function()
+    {
+        $scope.dateOptions = {
+            changeYear: false,
+            changeMonth: true
+        };
+
+        angular.extend($scope.dateOptions, jQuery.datepicker.regional["ru"]);
+    }
 
     $scope.close = function(result)
     {
