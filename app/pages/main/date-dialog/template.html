@@ -1,0 +1,13 @@
+<div class="b-popup-shadow"></div>
+<div class="b-dialog date-dialog animated fadeInDown">
+    <div class="b-dialog-content">
+        <span>Изменить стоимость на человека</span>
+        <form name="dateForm" novalidate>
+            <input class="b-dialog-content-input" type="text" placeholder="Дата" name="date" ng-model="date" required>
+            <div class="b-dialog-buttons">
+                <div ng-class="{'disabled': !dateForm.$valid}" class="b-button grey-button change-button" ng-click="close(date)"><span>Изменить</span></div>
+                <div class="b-button grey-button" ng-click="close()"><span>Закрыть</span></div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -18,6 +18,7 @@ var mainModule = angular.module
 
 require('./controller');
 require('./cost-dialog/controller');
+require('./date-dialog/controller');
 
 mainModule.config
 (

@@ -26,6 +26,25 @@ var mainCtrl = function($scope, restaurants, dates, ModalService)
             });
         });
     };
+
+    $scope.popup_date_dialog = function(date)
+    {
+        ModalService.showModal({
+            templateUrl: "pages/main/date-dialog/template.html",
+            controller: "main.date-dialog.ctrl",
+            inputs: {
+                date: date.date
+            }
+        }).then(function(modal) {
+            modal.close.then(function(result) 
+            {
+                if(result)
+                {
+                    dates.change_date(date, result);
+                }
+            });
+        });
+    };
 };
 
 mainModule.controller("main.ctrl", ["$scope", "models.restaurants", "models.dates", "ModalService", mainCtrl]);

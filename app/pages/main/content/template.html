@@ -16,7 +16,7 @@
         <div ng-repeat="date in dates.data" ng-class="{'hidden': !date.is_active}" ng-click="dates.activate(date)" class="b-content-meetings-card">
             <span class="b-content-meetings-card-date">{{date.date}}</span>
             <span style="margin-top: 3px;">{{date.time}}</span>
-            <div ng-click="popup_date_dialog()" ng-class="{'hidden': !date.is_active}" class="b-button blue-button ">
+            <div ng-click="popup_date_dialog(date)" ng-class="{'hidden': !date.is_active}" class="b-button blue-button ">
                 <span>Изменить</span>
             </div>
         </div>
