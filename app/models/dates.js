@@ -15,19 +15,19 @@ modelsModule.factory
             [
                 {
                     id: 1,
-                    date: "12 октября",
+                    date: new Date(2015, 10, 12, 19, 0, 0, 0),
                     time: "Суббота, 19:00",
                     is_active: false
                 },
                 {
                     id: 2,
-                    date: "23 октября",
+                    date: new Date(2015, 10, 23, 19, 0, 0, 0),
                     time: "Суббота, 19:00",
                     is_active: false
                 },
                 {
                     id: 3,
-                    date: "30 октября",
+                    date: new Date(2015, 10, 30, 19, 0, 0, 0),
                     time: "Суббота, 19:00",
                     is_active: false
                 }

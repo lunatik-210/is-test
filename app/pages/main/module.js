@@ -12,7 +12,8 @@ var mainModule = angular.module
         "ngAnimate",
         "angularModalService",
         require('angularUIRouter'),
-        require('../../models/module')
+        require('../../models/module'),
+        require('../../common/js/filters/module')
     ]
 );
 

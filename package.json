@@ -19,7 +19,9 @@
     "angular": "./bower_components/angular/angular.min.js",
     "angularUIRouter": "./bower_components/angular-ui-router/release/angular-ui-router.min.js",
     "angularAnimate": "./bower_components/angular-animate/angular-animate.min.js",
-    "angularModal": "./bower_components/angular-modal-service/dst/angular-modal-service.min.js"
+    "angularModal": "./bower_components/angular-modal-service/dst/angular-modal-service.min.js",
+    "moment": "./bower_components/momentjs/min/moment-with-locales.min.js",
+    "momentRu": "./bower_components/momentjs/locale/ru.js"
   },
   "browserify-shim": {
     "angular": {
@@ -45,6 +47,17 @@
     },
     "jQuery": {
       "exports": "jQuery"
+    },
+    "moment": {
+      "depends": [
+        "jQuery"
+      ],
+      "exports": "moment"
+    },
+    "momentRu": {
+      "depends": [
+        "moment"
+      ]
     }
   },
   "dependencies": {
