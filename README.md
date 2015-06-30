@@ -7,3 +7,10 @@ Spent time:
 * 1 man hour on project setup
 * 14 man hours on makeup
 * 10 man hours on js logics
+
+# How to:
+* Have gulp, npm, bower installed
+* npm install
+* bower install
+* gulp server
+* open browser on localhost:8000
