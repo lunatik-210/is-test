@@ -4,10 +4,18 @@
         <span>Институт физико-химии материалов, Физика металлов, выпуск 2006</span>
     </div>
     
-    <div class="b-content-classmates">
+    <div ng-init="start = 0; end = 10;" class="b-content-classmates">
         <span class="b-content-classmates-heading">Ваши однокурсники</span>
-        <div class="b-content-users"></div>
-        <a class="b-more-users-button">Показать еще 192 чевлоека</a>
+        <div class="b-content-users">
+            <div class="b-user" ng-repeat="user in users | sliceFilter:start:end">
+                <img ng-src="{{user.avatar_url}}" ng-mouseenter="user.required_toast=true" ng-mouseleave="user.required_toast=false">
+                    <div ng-if="user.required_toast" class="b-user-toast">
+                        <span>{{user.name}}</span>
+                    </div>
+                </img>
+            </div>
+        </div>
+        <a ng-show="users.length >= end" class="b-more-users-button" ng-click="end=end+10;">Показать еще 10 человек</a>
     </div>
 
     <div ng-if="dates.is_active()" class="b-tick"></div>

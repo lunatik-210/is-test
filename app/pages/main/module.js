@@ -16,7 +16,8 @@ var mainModule = angular.module
         "ui.date",
         require('angularUIRouter'),
         require('../../models/module'),
-        require('../../common/js/filters/module')
+        require('../../common/js/filters/module'),
+        require('../../rest/module')
     ]
 );
 
@@ -37,7 +38,16 @@ mainModule.config
                 {
                     url: "/main",
                     templateUrl: "pages/main/index.html",
-                    controller: "main.ctrl"
+                    controller: "main.ctrl",
+                    resolve: {
+                        users: [
+                            "rest.users",
+                            function(rest_users)
+                            {
+                                return rest_users.get();
+                            }
+                        ]
+                    }
                 }
             );
         }

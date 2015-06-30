@@ -3,10 +3,11 @@
 var angular = require("angular"); 
 var mainModule = angular.module("app.pages.main");
 
-var mainCtrl = function($scope, restaurants, dates, ModalService)
+var mainCtrl = function($scope, restaurants, dates, ModalService, users)
 {
     $scope.restaurants = restaurants;
     $scope.dates = dates;
+    $scope.users = users.data;
 
     $scope.popup_cost_dialog = function(restaurant)
     {
@@ -47,4 +48,4 @@ var mainCtrl = function($scope, restaurants, dates, ModalService)
     };
 };
 
-mainModule.controller("main.ctrl", ["$scope", "models.restaurants", "models.dates", "ModalService", mainCtrl]);
+mainModule.controller("main.ctrl", ["$scope", "models.restaurants", "models.dates", "ModalService", "users", mainCtrl]);

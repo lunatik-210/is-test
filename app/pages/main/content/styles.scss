@@ -28,7 +28,7 @@
 ////////////////////////////////////////
 .b-content-classmates {
     width: 830px;
-    height: 200px;
+    min-height: 100px;
     border-radius: 7px;
     margin-top: 35px;
     display: block;
@@ -37,10 +37,34 @@
 
 .b-content-users {
     width: 772px;
-    height: 98px;
+    min-height: 49px;
     margin-left: 30px;
     margin-top: 10px;
-    background: url('pages/main/content/assets/users.png') no-repeat;
+    padding-bottom: 15px;
+}
+
+.b-user {
+    margin: 4px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+
+.b-user:hover {
+    opacity: 0.8;
+}
+
+.b-user-toast {
+    position: absolute;
+    background: black;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.b-user-toast span {
+    display: inline-block;
+    margin: 10px;
 }
 
 .b-content-classmates-heading {
@@ -50,6 +74,19 @@
     margin-top: 15px;
     margin-left: 30px;
     cursor: default;
+}
+
+.b-more-users-button {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.b-more-users-button:hover {
+    opacity: 0.8;
 }
 
 ////////////////////////////////////////
@@ -143,19 +180,6 @@
 }
 
 ////////////////////////////////////////
-.b-more-users-button {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-    margin-left: 30px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-.b-more-users-button:hover {
-    opacity: 0.8;
-}
-
 .b-tick {
     display: inline-block;
     position: relative;
