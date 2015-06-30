@@ -8,6 +8,10 @@ Spent time:
 * 14 man hours on makeup
 * 10 man hours on js logics
 
+---
+
+33 man hours total
+
 # How to:
 * Have gulp, npm, bower installed
 * npm install
